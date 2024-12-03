@@ -2,9 +2,6 @@ a,b,c,m = map(int,input().split())
 q = 0
 total = 0
 for i in range(24) :
-    if q > m :
-        pass
-    else :
         if q + a <= m :
             q +=a
             total += b

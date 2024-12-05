@@ -1,4 +1,4 @@
-from math import gcd, sqrt
+from math import sqrt
 n = int(input())
 lst = []
 

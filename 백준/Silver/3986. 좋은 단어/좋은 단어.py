@@ -5,6 +5,7 @@ for _ in range(n):
     stack = []
     _list = list(input())
     for i in _list:
+
         if not stack:
             stack.append(i)
         elif stack[-1] == i:
@@ -12,7 +13,7 @@ for _ in range(n):
         else:
             stack.append(i)
 
-    if not len(stack):
+    if not stack:
         ans += 1 
 
 print(ans)

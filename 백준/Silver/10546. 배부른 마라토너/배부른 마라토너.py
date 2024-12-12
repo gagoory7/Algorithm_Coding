@@ -9,14 +9,10 @@ for _ in range(n*2-1) :
     name = input()
 
     if name in name_dict.keys() :
-        if name_dict[name] == 0 :
-            name_dict[name] +=1
-        else :
-            name_dict[name] -=1 
-    
+        name_dict[name] +=1
     else :
         name_dict[name] = 1
 
-ans = [k for k,v in name_dict.items() if v == 1]
+ans = [ k for k,v in name_dict.items() if v % 2 == 1]
 
 print(ans[0])
